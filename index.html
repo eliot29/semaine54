@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Semaine 54 — Automatisation IA & conseil pour TPE et PME bretonnes</title>
+  <meta name="description" content="Automatisations IA sur-mesure, assistant IA configuré, formation ciblée. Consultant IA basé à Brest, interventions en Bretagne. Audit gratuit sans engagement." />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Lucide icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+
+<!-- ============ NAVIGATION ============ -->
+<nav class="nav" id="main-nav">
+  <a href="#accueil" class="nav-logo">
+    <img src="logo-semaine54-blanc-new.svg" alt="Semaine 54" />
+  </a>
+  <div class="nav-desktop">
+    <div class="nav-links">
+      <a href="#accueil"    class="nav-link">Accueil</a>
+      <a href="#prestations" class="nav-link">Solutions</a>
+      <a href="#cas"        class="nav-link">Cas concrets</a>
+      <a href="#approche"   class="nav-link">Pourquoi S54 ?</a>
+      <a href="#methode"    class="nav-link">Méthode</a>
+      <a href="#contact"    class="nav-link">Contact</a>
+    </div>
+    <a href="#contact" class="btn-cta-nav">Audit gratuit</a>
+  </div>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+    <i data-lucide="menu" width="24" height="24"></i>
+  </button>
+  <div class="nav-mobile" id="nav-mobile">
+    <a href="#accueil"     class="nav-link" onclick="closeMobileNav()">Accueil</a>
+    <a href="#prestations"  class="nav-link" onclick="closeMobileNav()">Solutions</a>
+    <a href="#cas"         class="nav-link" onclick="closeMobileNav()">Cas concrets</a>
+    <a href="#approche"    class="nav-link" onclick="closeMobileNav()">Pourquoi S54 ?</a>
+    <a href="#methode"     class="nav-link" onclick="closeMobileNav()">Méthode</a>
+    <a href="#contact"     class="nav-link" onclick="closeMobileNav()">Contact</a>
+    <a href="#contact"     class="btn-cta-mobile" onclick="closeMobileNav()">Audit gratuit</a>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section id="accueil" class="bg-light hero">
+  <div class="container">
+    <div class="max-4xl text-center">
+      <div class="hero-logo">
+        <img src="logo-semaine54-dark-new.svg" alt="Semaine 54" style="height:5.5rem;" />
+      </div>
+
+      <div class="hero-badges">
+        <span class="badge badge-gold">
+          <span class="badge-dot pulse"></span>
+          Basé à Brest (Finistère)
+        </span>
+        <span class="badge badge-navy">Agence IA pour TPE et PME bretonnes</span>
+        <span class="badge badge-navy">Automatisations & conseils IA sur-mesure</span>
+      </div>
+
+      <h1 class="hero-h1">Gagnez du temps. Gagnez en productivité. Gagnez en rentabilité.</h1>
+
+      <div class="pain-grid">
+        <div class="pain-item"><i data-lucide="file-text" width="18" height="18" class="pain-icon"></i><span>Devis rédigés à la main</span></div>
+        <div class="pain-item"><i data-lucide="search" width="18" height="18" class="pain-icon"></i><span>Recherches d'informations répétitives</span></div>
+        <div class="pain-item"><i data-lucide="mail" width="18" height="18" class="pain-icon"></i><span>Relances de mails chronophages</span></div>
+        <div class="pain-item"><i data-lucide="share-2" width="18" height="18" class="pain-icon"></i><span>Publications irrégulières sur les réseaux</span></div>
+        <div class="pain-item"><i data-lucide="folder-open" width="18" height="18" class="pain-icon"></i><span>Administratif qui s'accumule</span></div>
+        <div class="pain-item"><i data-lucide="clock" width="18" height="18" class="pain-icon"></i><span>Comparaisons fournisseurs fastidieuses</span></div>
+        <div class="pain-item"><i data-lucide="bar-chart-3" width="18" height="18" class="pain-icon"></i><span>Longues analyses de fichiers Excel</span></div>
+        <div class="pain-item"><i data-lucide="image" width="18" height="18" class="pain-icon"></i><span>Productions laborieuses de supports visuels</span></div>
+      </div>
+
+      <p class="hero-italic">Ces tâches ne créent pas de valeur. Elles consomment votre temps.</p>
+
+      <p class="hero-stat">
+        <span class="text-gold">30 minutes</span> perdues par jour = <span class="text-gold">120 heures</span> par an.<br />
+        Soit près de <span class="text-gold">3 semaines</span> de travail à récupérer.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONCEPT ============ -->
+<section id="concept" class="bg-dark">
+  <div class="container">
+    <div class="max-4xl text-center">
+      <h2 class="concept-h2">
+        L'IA peut être une solution.
+        <span class="text-gold">Mais sous certaines conditions.</span>
+      </h2>
+
+      <div class="concept-box">
+        <p>Les outils d'IA se multiplient. Beaucoup d'entreprises perdent du temps à les tester avec des solutions trop génériques et éloignées du terrain.</p>
+        <p>Le problème n'est pas l'IA.<br />
+        Le problème est le <strong>manque d'accompagnement adapté aux PME</strong>.</p>
+      </div>
+
+      <p class="concept-punch">L'IA est un avantage concurrentiel lorsqu'elle est adaptée à votre entreprise.</p>
+
+      <div class="flex-center">
+        <a href="solutions.html" class="btn btn-outline-light btn-lg">
+          Découvrir les solutions en détail
+          <i data-lucide="arrow-right" width="18" height="18"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROPOSITION ============ -->
+<section id="prestations" class="bg-light">
+  <div class="container">
+    <div class="max-5xl">
+      <h2 class="section-title-dark">Ce que je propose concrètement</h2>
+      <p class="text-center text-muted-dark mb-4" style="margin-bottom:1rem;">
+        Après un audit gratuit, <strong style="color:var(--navy)">la solution la plus pertinente</strong> est définie à partir de <strong style="color:var(--navy)">votre réalité terrain</strong> :
+      </p>
+
+      <div class="prop-grid">
+        <div class="prop-card">
+          <ul>
+            <li><i data-lucide="workflow" width="16" height="16"></i>Automatisation via n8n</li>
+            <li><i data-lucide="bot" width="16" height="16"></i>Outil ou assistant IA configuré sur-mesure</li>
+            <li><i data-lucide="graduation-cap" width="16" height="16"></i>Formation ciblée aux LLM et aux outils d'IA</li>
+            <li><i data-lucide="puzzle" width="16" height="16"></i>Ou combinaison de ces solutions</li>
+          </ul>
+        </div>
+        <div class="prop-card">
+          <ul>
+            <li><i data-lucide="target" width="16" height="16"></i>Identification des priorités</li>
+            <li><i data-lucide="wrench" width="16" height="16"></i>Mise en place ou formation ciblée</li>
+            <li><i data-lucide="flask-conical" width="16" height="16"></i>Test en conditions réelles</li>
+            <li><i data-lucide="refresh-cw" width="16" height="16"></i>Ajustements selon les retours terrain</li>
+          </ul>
+        </div>
+        <div class="prop-card prop-full">
+          <ul>
+            <li><i data-lucide="user" width="16" height="16"></i><span><strong>Un seul interlocuteur en Bretagne</strong>, de l'audit jusqu'à la mise en service</span></li>
+            <li><i data-lucide="shield-check" width="16" height="16"></i><span><strong>Les projets sont volontairement limités</strong> pour garantir disponibilité et qualité de suivi</span></li>
+            <li><i data-lucide="crosshair" width="16" height="16"></i><span><strong>Objectif :</strong> vous libérer de vos tâches chronophages, répétitives ou mal maîtrisées,<br />pour vous concentrer sur ce qui crée réellement de la valeur.</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="prop-quote text-navy">Maîtriser et tester les outils IA demande du temps.</p>
+      <p class="prop-quote text-gold mt-2">Ce temps, je l'ai pris. Mon travail consiste à vous faire gagner le vôtre.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CAS CONCRETS ============ -->
+<section id="cas" class="bg-dark">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="section-title-light">Cinq situations concrètes. Cinq gains mesurables.</h2>
+    </div>
+
+    <div class="marquee-wrapper" style="--bg-color:#1B2D4F; margin-bottom:1.5rem;">
+      <div class="marquee-fade-left"></div>
+      <div class="marquee-fade-right"></div>
+      <div class="marquee-track slow" id="cas-track">
+        <!-- Cards duplicated for seamless loop -->
+        <div class="cas-card">
+          <div class="cas-card-header">
+            <span class="cas-sector">Menuisier / Plombier</span>
+            <span class="cas-location">Pays d'Iroise</span>
+          </div>
+          <p>Devis rédigés manuellement. Signatures perdues par email.</p>
+          <p>Fiche chantier → calcul automatique → PDF → signature électronique → archivage.</p>
+          <div class="cas-results">
+            <div class="cas-result"><i data-lucide="clock" width="13" height="13"></i><span>1h gagnée par devis</span></div>
+            <div class="cas-result"><i data-lucide="trending-up" width="13" height="13"></i><span>Cycle de vente accéléré</span></div>
+            <div class="cas-result"><i data-lucide="file-check" width="13" height="13"></i><span>Moins d'erreurs administratives</span></div>
+          </div>
+        </div>
+        <div class="cas-card">
+          <div class="cas-card-header">
+            <span class="cas-sector">Avocat / Notaire</span>
+            <span class="cas-location">Brest</span>
+          </div>
+          <p>Recherche juridique longue, outils grand public peu fiables et non confidentiels.</p>
+          <p>Assistant IA configuré pour interroger et synthétiser vos sources juridiques internes.</p>
+          <div class="cas-results">
+            <div class="cas-result"><i data-lucide="clock" width="13" height="13"></i><span>Recherche plus rapide</span></div>
+            <div class="cas-result"><i data-lucide="shield" width="13" height="13"></i><span>Confidentialité maîtrisée</span></div>
+            <div class="cas-result"><i data-lucide="file-check" width="13" height="13"></i><span>Préparation de dossier optimisée</span></div>
+          </div>
+        </div>
+        <div class="cas-card">
+          <div class="cas-card-header">
+            <span class="cas-sector">Commerce de proximité</span>
+            <span class="cas-location">Saint-Brieuc</span>
+          </div>
+          <p>Publications réseaux irrégulières, abandonnées faute de temps.</p>
+          <p>Calendrier éditorial défini une fois → génération assistée → publication planifiée.</p>
+          <div class="cas-results">
+            <div class="cas-result"><i data-lucide="eye" width="13" height="13"></i><span>Présence régulière sans surcharge</span></div>
+            <div class="cas-result"><i data-lucide="clock" width="13" height="13"></i><span>Temps de gestion réduit</span></div>
+            <div class="cas-result"><i data-lucide="trending-up" width="13" height="13"></i><span>Visibilité locale plus constante</span></div>
+          </div>
+        </div>
+        <div class="cas-card">
+          <div class="cas-card-header">
+            <span class="cas-sector">Cabinet comptable / Recrutement</span>
+            <span class="cas-location">Bretagne</span>
+          </div>
+          <p>Relances manuelles oubliées ou bâclées — impayés, candidats, prospects.</p>
+          <p>Déclencheur selon statut dossier → séquence d'emails personnalisés → suivi automatique.</p>
+          <div class="cas-results">
+            <div class="cas-result"><i data-lucide="users" width="13" height="13"></i><span>Réduction des oublis de relance</span></div>
+            <div class="cas-result"><i data-lucide="clock" width="13" height="13"></i><span>Temps commercial récupéré</span></div>
+            <div class="cas-result"><i data-lucide="trending-up" width="13" height="13"></i><span>Meilleure trésorerie / suivi candidats</span></div>
+          </div>
+        </div>
+        <!-- Duplicate for seamless loop -->
+        <div class="cas-card">
+          <div class="cas-card-header">
+            <span class="cas-sector">Menuisier / Plombier</span>
+            <span class="cas-location">Pays d'Iroise</span>
+          </div>
+          <p>Devis rédigés manuellement. Signatures perdues par email.</p>
+          <p>Fiche chantier → calcul automatique → PDF → signature électronique → archivage.</p>
+          <div class="cas-results">
+            <div class="cas-result"><i data-lucide="clock" width="13" height="13"></i><span>1h gagnée par devis</span></div>
+            <div class="cas-result"><i data-lucide="trending-up" width="13" height="13"></i><span>Cycle de vente accéléré</span></div>
+            <div class="cas-result"><i data-lucide="file-check" width="13" height="13"></i><span>Moins d'erreurs administratives</span></div>
+          </div>
+        </div>
+        <div class="cas-card">
+          <div class="cas-card-header">
+            <span class="cas-sector">Avocat / Notaire</span>
+            <span class="cas-location">Brest</span>
+          </div>
+          <p>Recherche juridique longue, outils grand public peu fiables et non confidentiels.</p>
+          <p>Assistant IA configuré pour interroger et synthétiser vos sources juridiques internes.</p>
+          <div class="cas-results">
+            <div class="cas-result"><i data-lucide="clock" width="13" height="13"></i><span>Recherche plus rapide</span></div>
+            <div class="cas-result"><i data-lucide="shield" width="13" height="13"></i><span>Confidentialité maîtrisée</span></div>
+            <div class="cas-result"><i data-lucide="file-check" width="13" height="13"></i><span>Préparation de dossier optimisée</span></div>
+          </div>
+        </div>
+        <div class="cas-card">
+          <div class="cas-card-header">
+            <span class="cas-sector">Commerce de proximité</span>
+            <span class="cas-location">Saint-Brieuc</span>
+          </div>
+          <p>Publications réseaux irrégulières, abandonnées faute de temps.</p>
+          <p>Calendrier éditorial défini une fois → génération assistée → publication planifiée.</p>
+          <div class="cas-results">
+            <div class="cas-result"><i data-lucide="eye" width="13" height="13"></i><span>Présence régulière sans surcharge</span></div>
+            <div class="cas-result"><i data-lucide="clock" width="13" height="13"></i><span>Temps de gestion réduit</span></div>
+            <div class="cas-result"><i data-lucide="trending-up" width="13" height="13"></i><span>Visibilité locale plus constante</span></div>
+          </div>
+        </div>
+        <div class="cas-card">
+          <div class="cas-card-header">
+            <span class="cas-sector">Cabinet comptable / Recrutement</span>
+            <span class="cas-location">Bretagne</span>
+          </div>
+          <p>Relances manuelles oubliées ou bâclées — impayés, candidats, prospects.</p>
+          <p>Déclencheur selon statut dossier → séquence d'emails personnalisés → suivi automatique.</p>
+          <div class="cas-results">
+            <div class="cas-result"><i data-lucide="users" width="13" height="13"></i><span>Réduction des oublis de relance</span></div>
+            <div class="cas-result"><i data-lucide="clock" width="13" height="13"></i><span>Temps commercial récupéré</span></div>
+            <div class="cas-result"><i data-lucide="trending-up" width="13" height="13"></i><span>Meilleure trésorerie / suivi candidats</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex-center">
+      <a href="secteurs.html" class="btn btn-primary btn-lg">Mon secteur est-il concerné ?</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ POURQUOI NOUS ============ -->
+<section id="approche" class="bg-light">
+  <div class="container">
+    <div class="max-5xl">
+      <h2 class="section-title-dark">Pourquoi Semaine 54 ?</h2>
+
+      <div class="space-y-4 mb-6 text-muted-dark" style="line-height:1.8;">
+        <p>Je suis <strong class="text-navy">Clément, 35 ans</strong>, à l'initiative de <strong class="text-navy">Semaine 54</strong>.</p>
+        <p>J'ai travaillé plusieurs années en <strong class="text-navy">grande distribution</strong>, d'abord comme chef de rayon, puis comme chef de secteur GMS côté marques.</p>
+        <p>Depuis trois ans, je teste et utilise les <strong class="text-navy">outils d'IA dans des contextes professionnels afin d'en comprendre les usages pertinents pour les entreprises.</strong></p>
+        <p class="font-bold text-navy">Mon constat : l'IA 2026 est un levier de croissance pour les PME en rendant accessibles des solutions jusque-là réservées aux grands groupes.</p>
+        <p><strong class="text-navy">Deux expériences concrètes</strong> ont confirmé cette conviction :</p>
+      </div>
+
+      <div class="space-y-4 mb-6">
+        <div class="story-box">
+          <p>J'ai accompagné une poissonnerie du Pays d'Iroise. En structurant une stratégie nourrie par l'IA et en utilisant des outils assistés par IA, les résultats ont été mesurables : <strong>73 000 vues</strong>, plus de <strong>800 abonnés gagnés</strong> et <span class="accent">+15 % de chiffre d'affaires</span>.</p>
+        </div>
+        <div class="story-box">
+          <p>J'ai également aidé un artisan électricien à simplifier la comparaison quotidienne de ses fournisseurs en mettant en place un assistant dédié. Résultat : environ <strong>10 minutes économisées par jour</strong>, soit près de <span class="accent">40 heures récupérées par an</span>.</p>
+        </div>
+      </div>
+
+      <p class="prop-quote text-navy text-center">Mon approche vient du terrain. <span class="text-gold">Pas d'une démonstration théorique.</span></p>
+
+      <div class="flex-center mt-6">
+        <a href="comment-ca-marche.html" class="btn btn-outline btn-lg">
+          En savoir plus sur la méthode
+          <i data-lucide="arrow-right" width="18" height="18"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTEURS STRIPS ============ -->
+<section id="secteurs" class="bg-dark">
+  <div class="container">
+    <!-- Strip 1: Domaines -->
+    <div class="marquee-wrapper" style="--bg-color:#1B2D4F; margin-bottom:1rem;">
+      <div class="marquee-fade-left"></div>
+      <div class="marquee-fade-right"></div>
+      <div class="marquee-track reverse slow">
+        <div class="strip-pill"><div class="strip-icon"><i data-lucide="megaphone" width="18" height="18"></i></div><span class="strip-label">Marketing & Prospection</span></div>
+        <div class="strip-pill"><div class="strip-icon"><i data-lucide="file-text" width="18" height="18"></i></div><span class="strip-label">Administratif & Comptabilité</span></div>
+        <div class="strip-pill"><div class="strip-icon"><i data-lucide="bar-chart-3" width="18" height="18"></i></div><span class="strip-label">Pilotage & Analyse</span></div>
+        <div class="strip-pill"><div class="strip-icon"><i data-lucide="headphones" width="18" height="18"></i></div><span class="strip-label">Service client & Support</span></div>
+        <div class="strip-pill"><div class="strip-icon"><i data-lucide="megaphone" width="18" height="18"></i></div><span class="strip-label">Marketing & Prospection</span></div>
+        <div class="strip-pill"><div class="strip-icon"><i data-lucide="file-text" width="18" height="18"></i></div><span class="strip-label">Administratif & Comptabilité</span></div>
+        <div class="strip-pill"><div class="strip-icon"><i data-lucide="bar-chart-3" width="18" height="18"></i></div><span class="strip-label">Pilotage & Analyse</span></div>
+        <div class="strip-pill"><div class="strip-icon"><i data-lucide="headphones" width="18" height="18"></i></div><span class="strip-label">Service client & Support</span></div>
+      </div>
+    </div>
+
+    <!-- Strip 2: Secteurs -->
+    <div class="marquee-wrapper" style="--bg-color:#1B2D4F; margin-bottom:1rem;">
+      <div class="marquee-fade-left"></div>
+      <div class="marquee-fade-right"></div>
+      <div class="marquee-track slow">
+        <div class="strip-pill"><div class="strip-icon"><i data-lucide="hammer" width="18" height="18"></i></div><span class="strip-label">Artisans & BTP</span></div>
+        <div class="strip-pill"><div class="strip-icon"><i data-lucide="scale" width="18" height="18"></i></div><span class="strip-label">Professions libérales</span></div>
+        <div class="strip-pill"><div class="strip-icon"><i data-lucide="shopping-bag" width="18" height="18"></i></div><span class="strip-label">Commerce de proximité</span></div>
+        <div class="strip-pill"><div class="strip-icon"><i data-lucide="building" width="18" height="18"></i></div><span class="strip-label">Immobilier</span></div>
+        <div class="strip-pill"><div class="strip-icon"><i data-lucide="utensils-crossed" width="18" height="18"></i></div><span class="strip-label">Restauration</span></div>
+        <div class="strip-pill"><div class="strip-icon"><i data-lucide="calculator" width="18" height="18"></i></div><span class="strip-label">Cabinet comptable</span></div>
+        <div class="strip-pill"><div class="strip-icon"><i data-lucide="users" width="18" height="18"></i></div><span class="strip-label">Recrutement</span></div>
+        <div class="strip-pill"><div class="strip-icon"><i data-lucide="briefcase" width="18" height="18"></i></div><span class="strip-label">Services aux entreprises</span></div>
+        <!-- dup -->
+        <div class="strip-pill"><div class="strip-icon"><i data-lucide="hammer" width="18" height="18"></i></div><span class="strip-label">Artisans & BTP</span></div>
+        <div class="strip-pill"><div class="strip-icon"><i data-lucide="scale" width="18" height="18"></i></div><span class="strip-label">Professions libérales</span></div>
+        <div class="strip-pill"><div class="strip-icon"><i data-lucide="shopping-bag" width="18" height="18"></i></div><span class="strip-label">Commerce de proximité</span></div>
+        <div class="strip-pill"><div class="strip-icon"><i data-lucide="building" width="18" height="18"></i></div><span class="strip-label">Immobilier</span></div>
+        <div class="strip-pill"><div class="strip-icon"><i data-lucide="utensils-crossed" width="18" height="18"></i></div><span class="strip-label">Restauration</span></div>
+        <div class="strip-pill"><div class="strip-icon"><i data-lucide="calculator" width="18" height="18"></i></div><span class="strip-label">Cabinet comptable</span></div>
+        <div class="strip-pill"><div class="strip-icon"><i data-lucide="users" width="18" height="18"></i></div><span class="strip-label">Recrutement</span></div>
+        <div class="strip-pill"><div class="strip-icon"><i data-lucide="briefcase" width="18" height="18"></i></div><span class="strip-label">Services aux entreprises</span></div>
+      </div>
+    </div>
+
+    <!-- Strip 3: Solutions -->
+    <div class="marquee-wrapper" style="--bg-color:#1B2D4F; margin-bottom:2rem;">
+      <div class="marquee-fade-left"></div>
+      <div class="marquee-fade-right"></div>
+      <div class="marquee-track reverse slow">
+        <div class="strip-pill"><div class="strip-icon"><i data-lucide="bot" width="18" height="18"></i></div><span class="strip-label">Chatbots</span></div>
+        <div class="strip-pill"><div class="strip-icon"><i data-lucide="brain-circuit" width="18" height="18"></i></div><span class="strip-label">Agents IA</span></div>
+        <div class="strip-pill"><div class="strip-icon"><i data-lucide="zap" width="18" height="18"></i></div><span class="strip-label">Automatisations</span></div>
+        <div class="strip-pill"><div class="strip-icon"><i data-lucide="layout-dashboard" width="18" height="18"></i></div><span class="strip-label">Dashboards & analyse</span></div>
+        <div class="strip-pill"><div class="strip-icon"><i data-lucide="pen-tool" width="18" height="18"></i></div><span class="strip-label">Génération de contenu</span></div>
+        <div class="strip-pill"><div class="strip-icon"><i data-lucide="radar" width="18" height="18"></i></div><span class="strip-label">Veille intelligente</span></div>
+        <!-- dup -->
+        <div class="strip-pill"><div class="strip-icon"><i data-lucide="bot" width="18" height="18"></i></div><span class="strip-label">Chatbots</span></div>
+        <div class="strip-pill"><div class="strip-icon"><i data-lucide="brain-circuit" width="18" height="18"></i></div><span class="strip-label">Agents IA</span></div>
+        <div class="strip-pill"><div class="strip-icon"><i data-lucide="zap" width="18" height="18"></i></div><span class="strip-label">Automatisations</span></div>
+        <div class="strip-pill"><div class="strip-icon"><i data-lucide="layout-dashboard" width="18" height="18"></i></div><span class="strip-label">Dashboards & analyse</span></div>
+        <div class="strip-pill"><div class="strip-icon"><i data-lucide="pen-tool" width="18" height="18"></i></div><span class="strip-label">Génération de contenu</span></div>
+        <div class="strip-pill"><div class="strip-icon"><i data-lucide="radar" width="18" height="18"></i></div><span class="strip-label">Veille intelligente</span></div>
+      </div>
+    </div>
+
+    <div class="flex-center">
+      <a href="#contact" class="btn btn-primary btn-lg">Découvrir les cas d'usage par secteur</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ METHODE ============ -->
+<section id="methode" class="bg-light">
+  <div class="container">
+    <div class="max-4xl">
+      <h2 class="section-title-dark">La méthode Semaine 54</h2>
+      <p class="text-center text-muted-dark mb-6">Un accompagnement structuré, étape par étape.</p>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-left">
+            <div class="timeline-num">01</div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">Diagnostic gratuit (30 min)</h3>
+            <p class="timeline-desc">Visio ou téléphone. Comprendre votre activité, vos contraintes et vos objectifs. Identifier les tâches qui consomment le plus de temps et celles qui offrent le meilleur retour sur investissement. L'occasion pour vous de savoir ce que l'IA peut réaliser de manière concrète.</p>
+            <p class="timeline-note">Sans engagement. Aucune vente forcée.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-left">
+            <div class="timeline-num">02</div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">Proposition sous trois jours ouvrés</h3>
+            <p class="timeline-desc">Une proposition adaptée à votre situation réelle. Je prends le temps de :</p>
+            <ul class="timeline-items">
+              <li><i data-lucide="target" width="14" height="14"></i>Identification des priorités</li>
+              <li><i data-lucide="wrench" width="14" height="14"></i>Mise en place ou formation ciblée</li>
+              <li><i data-lucide="flask-conical" width="14" height="14"></i>Test en conditions réelles</li>
+              <li><i data-lucide="refresh-cw" width="14" height="14"></i>Ajustements selon les retours terrain</li>
+            </ul>
+            <p class="timeline-note">Objectif : une vision claire avant toute mise en place.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-left">
+            <div class="timeline-num">03</div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">Mise en place : calibration et transmission</h3>
+            <p class="timeline-desc">La solution est configurée et testée dans vos conditions réelles. Nous travaillons sur des cas concrets de votre quotidien afin de garantir une utilisation simple et efficace.</p>
+            <p class="timeline-note">Selon les besoins : automatisation, outil IA ou formation.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-left">
+            <div class="timeline-num">04</div>
+          </div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">Suivi</h3>
+            <p class="timeline-desc">Les outils évoluent. Votre activité aussi. Je reste disponible pour :</p>
+            <ul class="timeline-items">
+              <li><i data-lucide="settings" width="14" height="14"></i>Ajuster les solutions mises en place</li>
+              <li><i data-lucide="message-circle" width="14" height="14"></i>Répondre aux questions</li>
+              <li><i data-lucide="trending-up" width="14" height="14"></i>Approfondir certains usages si nécessaire</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OUTILS ============ -->
+<section class="bg-dark" style="padding:1.5rem 0;">
+  <div class="container">
+    <p class="prop-quote text-light text-center mb-4">
+      Le marché a des centaines d'outils. <span class="text-gold">Mon rôle de partenaire : faire le tri pour vous.</span>
+    </p>
+    <div class="marquee-wrapper" style="--bg-color:#1B2D4F; margin-bottom:1rem;">
+      <div class="marquee-fade-left"></div>
+      <div class="marquee-fade-right"></div>
+      <div class="marquee-track slow">
+        <div class="tools-row">
+          <span class="tool-name">Claude</span>
+          <span class="tool-name">ChatGPT</span>
+          <span class="tool-name">Gemini</span>
+          <span class="tool-name">Notion AI</span>
+          <span class="tool-name">Noota</span>
+          <span class="tool-name">Copilot</span>
+          <span class="tool-name">Perplexity</span>
+        </div>
+        <div class="tools-row">
+          <span class="tool-name">Claude</span>
+          <span class="tool-name">ChatGPT</span>
+          <span class="tool-name">Gemini</span>
+          <span class="tool-name">Notion AI</span>
+          <span class="tool-name">Noota</span>
+          <span class="tool-name">Copilot</span>
+          <span class="tool-name">Perplexity</span>
+        </div>
+      </div>
+    </div>
+
+    <p class="prop-quote text-light text-center mb-4">Des outils qui s'intègrent à ceux que vous utilisez déjà :</p>
+    <div class="marquee-wrapper" style="--bg-color:#1B2D4F;">
+      <div class="marquee-fade-left"></div>
+      <div class="marquee-fade-right"></div>
+      <div class="marquee-track reverse slow">
+        <div class="tools-row">
+          <span class="tool-name">Gmail</span>
+          <span class="tool-name">HubSpot</span>
+          <span class="tool-name">Google Sheets</span>
+          <span class="tool-name">Slack</span>
+          <span class="tool-name">Outlook Calendar</span>
+          <span class="tool-name">Stripe</span>
+          <span class="tool-name">WhatsApp</span>
+          <span class="tool-name">Facebook</span>
+        </div>
+        <div class="tools-row">
+          <span class="tool-name">Gmail</span>
+          <span class="tool-name">HubSpot</span>
+          <span class="tool-name">Google Sheets</span>
+          <span class="tool-name">Slack</span>
+          <span class="tool-name">Outlook Calendar</span>
+          <span class="tool-name">Stripe</span>
+          <span class="tool-name">WhatsApp</span>
+          <span class="tool-name">Facebook</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRESTATIONS ============ -->
+<section class="bg-light" style="padding-top:1.5rem; padding-bottom:0.5rem;">
+  <div class="container">
+    <h2 class="section-title-dark">Trois leviers possibles</h2>
+    <div class="prest-grid">
+      <div class="prest-card">
+        <div class="prest-icon"><i data-lucide="cog" width="22" height="22"></i></div>
+        <h3 class="prest-title">Automatisation sur-mesure</h3>
+        <ul class="prest-list">
+          <li><i data-lucide="workflow" width="14" height="14"></i>Workflows via n8n</li>
+          <li><i data-lucide="link-2" width="14" height="14"></i>Connexion à vos outils existants</li>
+          <li><i data-lucide="rotate-ccw" width="14" height="14"></i>Automatisation des tâches répétitives</li>
+          <li><i data-lucide="lightbulb" width="14" height="14"></i>Logique simple, robuste et évolutive</li>
+        </ul>
+      </div>
+      <div class="prest-card">
+        <div class="prest-icon"><i data-lucide="graduation-cap" width="22" height="22"></i></div>
+        <h3 class="prest-title">Formation & acculturation IA</h3>
+        <p class="prest-badge">ChatGPT · Claude · Gemini · Copilot</p>
+        <ul class="prest-list">
+          <li><i data-lucide="message-square" width="14" height="14"></i>Usage structuré et professionnel</li>
+          <li><i data-lucide="pen-tool" width="14" height="14"></i>Maîtrise du prompt</li>
+          <li><i data-lucide="users" width="14" height="14"></i>Formation adaptée à votre niveau</li>
+          <li><i data-lucide="sliders-horizontal" width="14" height="14"></i>Mise en pratique sur vos cas réels</li>
+        </ul>
+      </div>
+      <div class="prest-card">
+        <div class="prest-icon"><i data-lucide="filter" width="22" height="22"></i></div>
+        <h3 class="prest-title">Conseil & choix d'outils</h3>
+        <ul class="prest-list">
+          <li><i data-lucide="compass" width="14" height="14"></i>Le marché compte des centaines d'outils IA</li>
+          <li><i data-lucide="shield-check" width="14" height="14"></i>Filtrer les solutions pertinentes</li>
+          <li><i data-lucide="ban" width="14" height="14"></i>Éviter les abonnements inutiles</li>
+          <li><i data-lucide="lightbulb" width="14" height="14"></i>Choisir ce qui correspond vraiment à votre activité</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECURITY ============ -->
+<section class="bg-light" style="padding-top:0.5rem;">
+  <div class="container">
+    <div class="security-box">
+      <div class="security-header">
+        <div class="security-icon-wrap"><i data-lucide="shield" width="18" height="18"></i></div>
+        <h2 style="font-size:1.3rem;font-weight:700;color:var(--navy);">Sécurité & RGPD</h2>
+      </div>
+      <div class="security-grid">
+        <div class="security-item">
+          <i data-lucide="server" width="18" height="18"></i>
+          <p>Les automatisations sont déployées via <strong>n8n</strong>, une infrastructure professionnelle dédiée aux workflows automatisés.</p>
+        </div>
+        <div class="security-item">
+          <i data-lucide="lock" width="18" height="18"></i>
+          <p>Les accès sont configurés au strict nécessaire, avec <strong>gestion sécurisée</strong> des identifiants et des connexions.</p>
+        </div>
+        <div class="security-item">
+          <i data-lucide="scale" width="18" height="18"></i>
+          <p>La conformité RGPD est abordée dès le diagnostic. Semaine 54 conçoit selon les <strong>bonnes pratiques</strong>, sans se substituer à vos obligations légales.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT CTA ============ -->
+<section id="audit" class="bg-dark">
+  <div class="container">
+    <h2 class="section-title-light">Audit stratégique — <span class="text-gold">Gratuit</span></h2>
+    <div class="contact-inner">
+      <div>
+        <p class="contact-desc">Un premier échange de 30 minutes pour :</p>
+        <ul class="contact-list">
+          <li>comprendre votre activité</li>
+          <li>identifier les tâches chronophages</li>
+          <li>voir si une solution pertinente existe</li>
+          <li>sans engagement</li>
+        </ul>
+      </div>
+      <div>
+        <a href="#contact" class="btn btn-primary btn-lg" style="font-size:1.1rem; padding:1rem 2.5rem;">
+          Réserver mon audit
+          <i data-lucide="arrow-right" width="20" height="20"></i>
+        </a>
+      </div>
+    </div>
+    <p class="text-center text-muted-light mt-4" style="font-size:0.875rem;">Un premier échange permet souvent d'identifier immédiatement plusieurs heures de tâches automatisables chaque semaine.</p>
+    <p class="prop-quote text-light text-center mt-6">Une année compte 52 semaines. <span class="text-gold">Gagnez votre Semaine 54.</span></p>
+  </div>
+</section>
+
+<!-- ============ CALCULATEUR ============ -->
+<section class="bg-pearl">
+  <div class="container">
+    <div class="calc-wrap">
+      <div class="text-center">
+        <div class="calc-icon-wrap"><i data-lucide="calculator" width="24" height="24"></i></div>
+        <h2 class="section-title-dark">Combien vous coûte cette tâche chaque année ?</h2>
+        <p class="text-muted-dark mb-6">Entrez le temps passé et la fréquence.</p>
+      </div>
+
+      <div class="calc-card">
+        <div class="calc-inputs">
+          <div>
+            <label class="calc-label" for="calc-minutes">Temps par occurrence (minutes)</label>
+            <input type="range" id="calc-minutes" min="5" max="120" value="30" oninput="updateCalc()" />
+            <div class="calc-value" id="display-minutes">30 min</div>
+          </div>
+          <div>
+            <label class="calc-label" for="calc-freq">Fréquence par semaine</label>
+            <input type="range" id="calc-freq" min="1" max="30" value="5" oninput="updateCalc()" />
+            <div class="calc-value" id="display-freq">5×/sem</div>
+          </div>
+        </div>
+        <div class="calc-results">
+          <div class="calc-result-box light">
+            <div class="calc-num" id="calc-hours">26</div>
+            <div class="calc-sub">heures perdues/an</div>
+          </div>
+          <div class="calc-result-box light">
+            <div class="calc-num text-gold" id="calc-weeks">0.6</div>
+            <div class="calc-sub">semaines de travail</div>
+          </div>
+          <div class="calc-result-box dark">
+            <div class="calc-num" id="calc-gain">21h</div>
+            <div class="calc-sub">gain si automatisé</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer id="contact">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div style="display:flex;align-items:center;gap:0.75rem;">
+          <span class="footer-col-title">Contact</span>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social"><i data-lucide="facebook" width="18" height="18"></i></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social"><i data-lucide="instagram" width="18" height="18"></i></a>
+        </div>
+        <a href="tel:0610322082" class="footer-link"><i data-lucide="phone" width="16" height="16"></i>06 10 32 20 82</a>
+        <a href="mailto:semaine54ia@gmail.com" class="footer-link"><i data-lucide="mail" width="16" height="16"></i>semaine54ia@gmail.com</a>
+      </div>
+      <div class="footer-col">
+        <span class="footer-col-title">Localisation</span>
+        <span class="footer-link"><i data-lucide="map-pin" width="16" height="16"></i>Basé à Brest (Finistère)</span>
+        <span style="color:var(--blanc-casse);">Accompagnement des PME et TPE</span>
+      </div>
+      <div class="footer-col">
+        <span class="footer-col-title">Zone d'intervention</span>
+        <span style="color:var(--blanc-casse);">Finistère · Côtes-d'Armor</span>
+        <span style="color:var(--blanc-casse);">Morbihan · Ille-et-Vilaine</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">semaine54.fr<br />Site réalisé à l'aide d'intelligence artificielle</p>
+      <div class="footer-logo"><img src="logo-semaine54-blanc-new.svg" alt="Semaine 54" style="height:3rem;" /></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Nav scroll effect
+  const nav = document.getElementById('main-nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 40);
+  });
+
+  // Mobile menu
+  const toggle = document.getElementById('nav-toggle');
+  const mobileNav = document.getElementById('nav-mobile');
+  let open = false;
+
+  function closeMobileNav() {
+    open = false;
+    mobileNav.classList.remove('open');
+    toggle.innerHTML = '<i data-lucide="menu" width="24" height="24"></i>';
+    lucide.createIcons();
+  }
+
+  toggle.addEventListener('click', () => {
+    open = !open;
+    mobileNav.classList.toggle('open', open);
+    toggle.innerHTML = open
+      ? '<i data-lucide="x" width="24" height="24"></i>'
+      : '<i data-lucide="menu" width="24" height="24"></i>';
+    lucide.createIcons();
+  });
+
+  // Calculator
+  function updateCalc() {
+    const minutes = parseInt(document.getElementById('calc-minutes').value);
+    const perWeek = parseInt(document.getElementById('calc-freq').value);
+    const hoursPerYear = Math.round(minutes * perWeek * 52 / 60);
+    const weeksEquiv = (hoursPerYear / 40).toFixed(1);
+    const gain = Math.round(hoursPerYear * 0.8);
+
+    document.getElementById('display-minutes').textContent = minutes + ' min';
+    document.getElementById('display-freq').textContent = perWeek + '×/sem';
+    document.getElementById('calc-hours').textContent = hoursPerYear;
+    document.getElementById('calc-weeks').textContent = weeksEquiv;
+    document.getElementById('calc-gain').textContent = gain + 'h';
+  }
+  updateCalc();
+
+  // Init lucide icons
+  lucide.createIcons();
+</script>
+</body>
+</html>
