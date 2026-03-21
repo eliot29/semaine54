@@ -99,10 +99,14 @@
 
       <p class="concept-punch">L'IA est un avantage concurrentiel lorsqu'elle est adaptée à votre entreprise.</p>
 
-      <div class="flex-center">
+      <div class="flex-center" style="gap:1rem;flex-wrap:wrap;">
         <a href="solutions.html" class="btn btn-outline-light btn-lg">
           Découvrir les solutions en détail
           <i data-lucide="arrow-right" width="18" height="18"></i>
+        </a>
+        <a href="pourquoi-semaine-54.html#constat" class="btn btn-outline-light btn-lg">
+          Pourquoi l'IA générique ne suffit pas
+          <i data-lucide="arrow-right" width="16" height="16"></i>
         </a>
       </div>
     </div>
@@ -146,6 +150,13 @@
 
       <p class="prop-quote text-navy">Maîtriser et tester les outils IA demande du temps.</p>
       <p class="prop-quote text-gold mt-2">Ce temps, je l'ai pris. Mon travail consiste à vous faire gagner le vôtre.</p>
+
+      <div class="flex-center mt-4">
+        <a href="pourquoi-semaine-54.html#parcours" class="btn btn-outline btn-lg">
+          Découvrir mon parcours et ma méthode
+          <i data-lucide="arrow-right" width="16" height="16"></i>
+        </a>
+      </div>
     </div>
   </div>
 </section>
@@ -301,7 +312,11 @@
 
       <p class="prop-quote text-navy text-center">Mon approche vient du terrain. <span class="text-gold">Pas d'une démonstration théorique.</span></p>
 
-      <div class="flex-center mt-6">
+      <div class="flex-center mt-6" style="gap:1rem;flex-wrap:wrap;">
+        <a href="pourquoi-semaine-54.html#preuves" class="btn btn-outline btn-lg">
+          Voir les résultats concrets
+          <i data-lucide="arrow-right" width="18" height="18"></i>
+        </a>
         <a href="comment-ca-marche.html" class="btn btn-outline btn-lg">
           En savoir plus sur la méthode
           <i data-lucide="arrow-right" width="18" height="18"></i>
@@ -444,6 +459,13 @@
           </div>
         </div>
       </div>
+
+      <div class="flex-center mt-6">
+        <a href="comment-ca-marche.html#leviers" class="btn btn-outline btn-lg">
+          Voir toutes les solutions
+          <i data-lucide="arrow-right" width="16" height="16"></i>
+        </a>
+      </div>
     </div>
   </div>
 </section>
@@ -575,29 +597,40 @@
   </div>
 </section>
 
-<!-- ============ CONTACT CTA ============ -->
+<!-- ============ CONTACT / FORMULAIRE ============ -->
 <section id="audit" class="bg-dark">
   <div class="container">
-    <h2 class="section-title-light">Audit stratégique — <span class="text-gold">Gratuit</span></h2>
-    <div class="contact-inner">
-      <div>
-        <p class="contact-desc">Un premier échange de 30 minutes pour :</p>
-        <ul class="contact-list">
-          <li>comprendre votre activité</li>
-          <li>identifier les tâches chronophages</li>
-          <li>voir si une solution pertinente existe</li>
-          <li>sans engagement</li>
-        </ul>
+    <h2 class="section-title-light">Diagnostic gratuit — <span class="text-gold">20/30 min</span></h2>
+    <p class="text-center text-muted-light mb-4" style="max-width:36rem;margin-left:auto;margin-right:auto;">
+      Un premier échange pour comprendre votre activité, identifier vos tâches chronophages et voir si une solution pertinente existe. Sans engagement.
+    </p>
+
+    <form action="https://formspree.io/f/mojkzvjp" method="POST" class="contact-form">
+      <div class="form-group">
+        <label for="nom" class="form-label">Nom *</label>
+        <input type="text" id="nom" name="nom" required placeholder="Votre nom" maxlength="100" class="form-input" />
       </div>
-      <div>
-        <a href="#contact" class="btn btn-primary btn-lg" style="font-size:1.1rem; padding:1rem 2.5rem;">
-          Réserver mon audit
-          <i data-lucide="arrow-right" width="20" height="20"></i>
-        </a>
+      <div class="form-group">
+        <label for="email" class="form-label">Email *</label>
+        <input type="email" id="email" name="email" required placeholder="votre@email.com" maxlength="255" class="form-input" />
       </div>
-    </div>
-    <p class="text-center text-muted-light mt-4" style="font-size:0.875rem;">Un premier échange permet souvent d'identifier immédiatement plusieurs heures de tâches automatisables chaque semaine.</p>
-    <p class="prop-quote text-light text-center mt-6">Une année compte 52 semaines. <span class="text-gold">Gagnez votre Semaine 54.</span></p>
+      <div class="form-group">
+        <label for="telephone" class="form-label">Téléphone</label>
+        <input type="tel" id="telephone" name="telephone" placeholder="06 00 00 00 00" maxlength="20" class="form-input" />
+      </div>
+      <div class="form-group">
+        <label for="message" class="form-label">Message</label>
+        <textarea id="message" name="message" placeholder="Décrivez brièvement votre activité ou votre besoin..." maxlength="1000" rows="3" class="form-input form-textarea"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-lg btn-full">
+        Être rappelé
+        <i data-lucide="arrow-right" width="18" height="18"></i>
+      </button>
+      <p class="form-note">Je vous contacte pour planifier votre audit — en appel ou visio, selon votre préférence. Également disponible en soirée et le week-end.</p>
+    </form>
+
+    <p class="text-center text-muted-light mt-6" style="font-size:0.875rem;">Un premier échange permet souvent d'identifier immédiatement plusieurs heures de tâches automatisables chaque semaine.</p>
+    <p class="prop-quote text-light text-center mt-4">Une année compte 52 semaines. <span class="text-gold">Gagnez votre Semaine 54.</span></p>
   </div>
 </section>
 
