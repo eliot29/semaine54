@@ -792,6 +792,7 @@ footer {
   cursor: pointer;
   outline: none;
 }
+.secteurs-select:focus-visible { outline: 2px solid var(--or-mat); outline-offset: 2px; }
 .secteurs-select option { background: var(--navy); color: var(--blanc-casse); }
 
 .secteurs-grid {
@@ -897,6 +898,7 @@ footer {
 }
 .form-input::placeholder { color: rgba(244,241,235,0.3); }
 .form-input:focus { outline: none; border-color: var(--or-mat); }
+.form-input:focus-visible { outline: 2px solid var(--or-mat); outline-offset: 2px; }
 .form-textarea { resize: none; }
 .btn-full { width: 100%; justify-content: center; }
 .form-note { font-size: 0.75rem; color: rgba(244,241,235,0.4); text-align: center; margin-top: 0.25rem; }
@@ -908,3 +910,43 @@ footer {
   color: var(--ardoise);
 }
 .form-input-light::placeholder { color: rgba(42,62,82,0.35); }
+
+/* ---- Keyboard focus indicators (WCAG 2.1 AA) ---- */
+.btn:focus-visible,
+.btn-cta-nav:focus-visible {
+  outline: 2px solid var(--or-mat);
+  outline-offset: 3px;
+}
+.nav-link:focus-visible {
+  outline: 2px solid var(--or-mat);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+.nav-toggle:focus-visible {
+  outline: 2px solid var(--or-mat);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+.accordion-trigger:focus-visible {
+  outline: 2px solid var(--or-mat);
+  outline-offset: 2px;
+}
+a:focus-visible {
+  outline: 2px solid var(--or-mat);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+/* Skip-to-content link */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  background: var(--or-mat);
+  color: var(--navy);
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  z-index: 9999;
+  border-radius: 0 0 0.5rem 0;
+  transition: top 0.2s;
+}
+.skip-link:focus { top: 0; }

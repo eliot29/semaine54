@@ -5,11 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Automatisation IA & solutions pour PME Bretagne | Semaine 54</title>
   <meta name="description" content="Workflows n8n, assistant IA sur-mesure, formation ciblée. Cas concrets, FAQ technique, RGPD. Consultant IA basé en Finistère, interventions en Bretagne." />
+  <link rel="canonical" href="https://semaine54.fr/solutions.html" />
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://semaine54.fr/solutions.html" />
+  <meta property="og:title"       content="Automatisation IA & solutions pour PME Bretagne | Semaine 54" />
+  <meta property="og:description" content="Workflows n8n, assistant IA sur-mesure, formation ciblée. Cas concrets, FAQ technique, RGPD. Consultant IA basé en Finistère, interventions en Bretagne." />
+  <meta property="og:image"       content="https://semaine54.fr/og-image.jpg" />
+  <meta property="og:locale"      content="fr_FR" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Automatisation IA & solutions pour PME Bretagne | Semaine 54" />
+  <meta name="twitter:description" content="Workflows n8n, assistant IA sur-mesure, formation ciblée. Cas concrets, FAQ technique, RGPD. Consultant IA basé en Finistère, interventions en Bretagne." />
+  <meta name="twitter:image"       content="https://semaine54.fr/og-image.jpg" />
   <link rel="icon" href="favicon.ico" />
   <link rel="stylesheet" href="styles.css" />
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
 <body>
+
+<a class="skip-link" href="#main-content">Aller au contenu principal</a>
 
 <!-- NAVIGATION -->
 <nav class="nav" id="main-nav">
@@ -27,7 +42,7 @@
     </div>
     <a href="index.html#contact" class="btn-cta-nav">Audit gratuit</a>
   </div>
-  <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+  <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-mobile">
     <i data-lucide="menu" width="24" height="24"></i>
   </button>
   <div class="nav-mobile" id="nav-mobile">
@@ -41,7 +56,7 @@
   </div>
 </nav>
 
-<main>
+<main id="main-content">
   <!-- HERO -->
   <section class="page-hero">
     <div class="container">
@@ -235,7 +250,7 @@
         <h2 class="section-title-dark">FAQ technique & sécurité</h2>
         <div class="accordion">
           <div class="accordion-item light-bg">
-            <button class="accordion-trigger" onclick="toggleAccordion(this)">
+            <button class="accordion-trigger" onclick="toggleAccordion(this)" aria-expanded="false">
               <span class="accordion-trigger-text">Faut-il changer ses outils pour automatiser ?</span>
               <i data-lucide="chevron-down" width="20" height="20" class="accordion-arrow"></i>
             </button>
@@ -244,7 +259,7 @@
             </div>
           </div>
           <div class="accordion-item light-bg">
-            <button class="accordion-trigger" onclick="toggleAccordion(this)">
+            <button class="accordion-trigger" onclick="toggleAccordion(this)" aria-expanded="false">
               <span class="accordion-trigger-text">Et si je n'ai pas de logiciel de gestion ?</span>
               <i data-lucide="chevron-down" width="20" height="20" class="accordion-arrow"></i>
             </button>
@@ -253,7 +268,7 @@
             </div>
           </div>
           <div class="accordion-item light-bg">
-            <button class="accordion-trigger" onclick="toggleAccordion(this)">
+            <button class="accordion-trigger" onclick="toggleAccordion(this)" aria-expanded="false">
               <span class="accordion-trigger-text">Est-ce que ça demande des compétences techniques ?</span>
               <i data-lucide="chevron-down" width="20" height="20" class="accordion-arrow"></i>
             </button>
@@ -262,7 +277,7 @@
             </div>
           </div>
           <div class="accordion-item light-bg">
-            <button class="accordion-trigger" onclick="toggleAccordion(this)">
+            <button class="accordion-trigger" onclick="toggleAccordion(this)" aria-expanded="false">
               <span class="accordion-trigger-text">Mes données sont-elles en sécurité ?</span>
               <i data-lucide="chevron-down" width="20" height="20" class="accordion-arrow"></i>
             </button>
@@ -298,8 +313,8 @@
       <div class="footer-col">
         <div style="display:flex;align-items:center;gap:0.75rem;">
           <span class="footer-col-title">Contact</span>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social"><i data-lucide="facebook" width="18" height="18"></i></a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social"><i data-lucide="instagram" width="18" height="18"></i></a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="Suivre Semaine 54 sur Facebook"><i data-lucide="facebook" width="18" height="18"></i></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="Suivre Semaine 54 sur Instagram"><i data-lucide="instagram" width="18" height="18"></i></a>
         </div>
         <a href="tel:0610322082" class="footer-link"><i data-lucide="phone" width="16" height="16"></i>06 10 32 20 82</a>
         <a href="mailto:semaine54ia@gmail.com" class="footer-link"><i data-lucide="mail" width="16" height="16"></i>semaine54ia@gmail.com</a>
@@ -329,14 +344,17 @@
   const toggle = document.getElementById('nav-toggle');
   const mobileNav = document.getElementById('nav-mobile');
   let open = false;
-  function closeMobileNav() { open = false; mobileNav.classList.remove('open'); toggle.innerHTML = '<i data-lucide="menu" width="24" height="24"></i>'; lucide.createIcons(); }
-  toggle.addEventListener('click', () => { open = !open; mobileNav.classList.toggle('open', open); toggle.innerHTML = open ? '<i data-lucide="x" width="24" height="24"></i>' : '<i data-lucide="menu" width="24" height="24"></i>'; lucide.createIcons(); });
+  function closeMobileNav() { open = false; mobileNav.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false'); toggle.innerHTML = '<i data-lucide="menu" width="24" height="24"></i>'; lucide.createIcons(); }
+  toggle.addEventListener('click', () => { open = !open; mobileNav.classList.toggle('open', open); toggle.setAttribute('aria-expanded', open ? 'true' : 'false'); toggle.innerHTML = open ? '<i data-lucide="x" width="24" height="24"></i>' : '<i data-lucide="menu" width="24" height="24"></i>'; lucide.createIcons(); });
 
   function toggleAccordion(btn) {
     const item = btn.closest('.accordion-item');
     const isOpen = item.classList.contains('open');
-    document.querySelectorAll('.accordion-item.open').forEach(el => el.classList.remove('open'));
-    if (!isOpen) item.classList.add('open');
+    document.querySelectorAll('.accordion-item.open').forEach(el => {
+      el.classList.remove('open');
+      el.querySelector('.accordion-trigger').setAttribute('aria-expanded', 'false');
+    });
+    if (!isOpen) { item.classList.add('open'); btn.setAttribute('aria-expanded', 'true'); }
   }
 
   lucide.createIcons();

@@ -5,12 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mon secteur est-il concerné ? | Semaine 54</title>
   <meta name="description" content="47 secteurs d'activité couverts. Découvrez comment l'IA et l'automatisation peuvent concrètement vous faire gagner du temps selon votre métier. Consultant IA Bretagne." />
+  <link rel="canonical" href="https://semaine54.fr/secteurs.html" />
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://semaine54.fr/secteurs.html" />
+  <meta property="og:title"       content="Mon secteur est-il concerné ? | Semaine 54" />
+  <meta property="og:description" content="47 secteurs d'activité couverts. Découvrez comment l'IA et l'automatisation peuvent concrètement vous faire gagner du temps selon votre métier. Consultant IA Bretagne." />
+  <meta property="og:image"       content="https://semaine54.fr/og-image.jpg" />
+  <meta property="og:locale"      content="fr_FR" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Mon secteur est-il concerné ? | Semaine 54" />
+  <meta name="twitter:description" content="47 secteurs d'activité couverts. Découvrez comment l'IA et l'automatisation peuvent concrètement vous faire gagner du temps selon votre métier. Consultant IA Bretagne." />
+  <meta name="twitter:image"       content="https://semaine54.fr/og-image.jpg" />
   <link rel="icon" href="favicon.ico" />
   <link rel="stylesheet" href="styles.css" />
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
   <script src="secteurs-data.js"></script>
 </head>
 <body class="secteurs-page">
+
+<a class="skip-link" href="#main-content">Aller au contenu principal</a>
 
 <!-- NAVIGATION -->
 <nav class="nav" id="main-nav" style="background:rgba(27,45,79,0.95);">
@@ -28,7 +43,7 @@
     </div>
     <a href="index.html#contact" class="btn-cta-nav">Audit gratuit</a>
   </div>
-  <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+  <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-mobile">
     <i data-lucide="menu" width="24" height="24"></i>
   </button>
   <div class="nav-mobile" id="nav-mobile">
@@ -42,7 +57,7 @@
   </div>
 </nav>
 
-<div style="padding-top:5rem;">
+<main id="main-content" style="padding-top:5rem;">
   <!-- HEADER -->
   <header class="secteurs-header">
     <div class="container">
@@ -58,7 +73,7 @@
   <!-- FILTER -->
   <div class="secteurs-filter">
     <div class="container">
-      <select class="secteurs-select" id="cat-filter" onchange="filterSecteurs()">
+      <select class="secteurs-select" id="cat-filter" onchange="filterSecteurs()" aria-label="Filtrer par catégorie de secteur">
         <option value="all">Tous les secteurs</option>
       </select>
     </div>
@@ -73,7 +88,7 @@
       </div>
     </div>
   </section>
-</div>
+</main>
 
 <!-- FOOTER -->
 <footer id="contact">
@@ -82,8 +97,8 @@
       <div class="footer-col">
         <div style="display:flex;align-items:center;gap:0.75rem;">
           <span class="footer-col-title">Contact</span>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social"><i data-lucide="facebook" width="18" height="18"></i></a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social"><i data-lucide="instagram" width="18" height="18"></i></a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="Suivre Semaine 54 sur Facebook"><i data-lucide="facebook" width="18" height="18"></i></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="Suivre Semaine 54 sur Instagram"><i data-lucide="instagram" width="18" height="18"></i></a>
         </div>
         <a href="tel:0610322082" class="footer-link"><i data-lucide="phone" width="16" height="16"></i>06 10 32 20 82</a>
         <a href="mailto:semaine54ia@gmail.com" class="footer-link"><i data-lucide="mail" width="16" height="16"></i>semaine54ia@gmail.com</a>
@@ -113,8 +128,8 @@
   const toggle = document.getElementById('nav-toggle');
   const mobileNav = document.getElementById('nav-mobile');
   let open = false;
-  function closeMobileNav() { open = false; mobileNav.classList.remove('open'); toggle.innerHTML = '<i data-lucide="menu" width="24" height="24"></i>'; lucide.createIcons(); }
-  toggle.addEventListener('click', () => { open = !open; mobileNav.classList.toggle('open', open); toggle.innerHTML = open ? '<i data-lucide="x" width="24" height="24"></i>' : '<i data-lucide="menu" width="24" height="24"></i>'; lucide.createIcons(); });
+  function closeMobileNav() { open = false; mobileNav.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false'); toggle.innerHTML = '<i data-lucide="menu" width="24" height="24"></i>'; lucide.createIcons(); }
+  toggle.addEventListener('click', () => { open = !open; mobileNav.classList.toggle('open', open); toggle.setAttribute('aria-expanded', open ? 'true' : 'false'); toggle.innerHTML = open ? '<i data-lucide="x" width="24" height="24"></i>' : '<i data-lucide="menu" width="24" height="24"></i>'; lucide.createIcons(); });
 
   // Build filter options
   const secteurs = SECTEURS_DATA.secteurs;

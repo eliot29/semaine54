@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://semaine54.fr/sitemap.xml
