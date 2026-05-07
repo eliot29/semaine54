@@ -1,4 +1,10 @@
 User-agent: *
 Allow: /
+Disallow: /404
+Disallow: /404.html
 
+# Éviter l'indexation du site sur d'éventuels sous-domaines d'hébergeur
+# (la version canonique est sur https://semaine54.fr)
+
+Host: semaine54.fr
 Sitemap: https://semaine54.fr/sitemap.xml

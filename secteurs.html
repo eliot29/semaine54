@@ -83,9 +83,12 @@
   <!-- FILTER -->
   <div class="secteurs-filter">
     <div class="container">
-      <select class="secteurs-select" id="cat-filter" onchange="filterSecteurs()" aria-label="Filtrer par catégorie de secteur">
-        <option value="all">Tous les secteurs</option>
-      </select>
+      <!-- Phase 1 : boutons catégorie (état initial) -->
+      <div class="secteurs-cat-btns" id="cat-btns" aria-label="Choisir une catégorie"></div>
+      <!-- Phase 2 : dropdown (après sélection) -->
+      <div id="cat-select-wrap" style="display:none;justify-content:center;">
+        <select class="secteurs-select" id="cat-filter" onchange="onCatChange(this.value)" aria-label="Filtrer par catégorie de secteur"></select>
+      </div>
     </div>
   </div>
 
@@ -141,18 +144,10 @@
   function closeMobileNav() { open = false; mobileNav.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false'); toggle.innerHTML = '<i data-lucide="menu" width="24" height="24"></i>'; lucide.createIcons(); }
   toggle.addEventListener('click', () => { open = !open; mobileNav.classList.toggle('open', open); toggle.setAttribute('aria-expanded', open ? 'true' : 'false'); toggle.innerHTML = open ? '<i data-lucide="x" width="24" height="24"></i>' : '<i data-lucide="menu" width="24" height="24"></i>'; lucide.createIcons(); });
 
-  // Build filter options
   const secteurs = SECTEURS_DATA.secteurs;
-  const cats = [...new Set(secteurs.map(s => s.categorie))].sort();
-  const select = document.getElementById('cat-filter');
-  cats.forEach(cat => {
-    const opt = document.createElement('option');
-    opt.value = cat;
-    opt.textContent = cat;
-    select.appendChild(opt);
-  });
+  const cats = [...new Set(secteurs.map(s => s.categorie))];
 
-  // Render cards
+  // Render cards for a given category
   function renderCard(s) {
     const problemes = s.problemes.map(p => `<p class="secteur-probleme">• ${p}</p>`).join('');
     const solutions = s.solutions.map(sol => `
@@ -181,15 +176,46 @@
     `;
   }
 
-  function filterSecteurs() {
-    const val = select.value;
+  function renderGrid(cat) {
     const grid = document.getElementById('secteurs-grid');
-    const filtered = val === 'all' ? secteurs : secteurs.filter(s => s.categorie === val);
+    const filtered = cat ? secteurs.filter(s => s.categorie === cat) : [];
     grid.innerHTML = filtered.map(renderCard).join('');
   }
 
-  // Initial render
-  filterSecteurs();
+  function selectCategory(cat) {
+    // Switch from buttons to dropdown
+    document.getElementById('cat-btns').style.display = 'none';
+    const wrap = document.getElementById('cat-select-wrap');
+    wrap.style.display = 'flex';
+    document.getElementById('cat-filter').value = cat;
+    renderGrid(cat);
+  }
+
+  function onCatChange(val) {
+    renderGrid(val);
+  }
+
+  // Build category buttons (phase 1)
+  const catBtns = document.getElementById('cat-btns');
+  cats.forEach(cat => {
+    const btn = document.createElement('button');
+    btn.className = 'secteurs-cat-btn';
+    btn.textContent = cat;
+    btn.addEventListener('click', () => selectCategory(cat));
+    catBtns.appendChild(btn);
+  });
+
+  // Build dropdown options (phase 2)
+  const select = document.getElementById('cat-filter');
+  cats.forEach(cat => {
+    const opt = document.createElement('option');
+    opt.value = cat;
+    opt.textContent = cat;
+    select.appendChild(opt);
+  });
+
+  // Initial state: empty grid, buttons visible
+  renderGrid(null);
   lucide.createIcons();
 </script>
 </body>
